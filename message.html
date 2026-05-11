@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Baby ❤️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e7,#fff0f6);
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    padding:30px 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100%;
+    max-width:650px;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:#ff2e74;
+    font-size:2.1rem;
+    margin-bottom:20px;
+}
+
+p{
+    color:#5a2140;
+    font-size:1.1rem;
+    line-height:1.9;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    border-radius:40px;
+    background:#ff2e74;
+    color:white;
+    text-decoration:none;
+    font-size:1rem;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(255,46,116,0.4);
+}
+
+.button:hover{
+    transform:scale(1.08);
+    background:#ff0f63;
+}
+
+#moreMessage{
+    margin-top:35px;
+    display:none;
+    animation:fadeIn 1s ease;
+}
+
+#moreMessage:target{
+    display:block;
+}
+
+.love{
+    margin-top:30px;
+    color:#ff005d;
+    font-size:1.4rem;
+    font-weight:bold;
+    line-height:2;
+    word-wrap:break-word;
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    font-size:24px;
+    color:rgba(255,255,255,0.7);
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) scale(0.5);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-10vh) scale(1.2);
+        opacity:0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    p{
+        font-size:1rem;
+    }
+
+    .love{
+        font-size:1.2rem;
+    }
+
+    .button{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">💖</div>
+    <div class="heart" style="left:40%; animation-delay:4s;">💕</div>
+    <div class="heart" style="left:60%; animation-delay:1s;">❤️</div>
+    <div class="heart" style="left:75%; animation-delay:3s;">💗</div>
+    <div class="heart" style="left:90%; animation-delay:5s;">💞</div>
+</div>
+
+<div class="container">
+
+    <h1>Good Morning My Babyyyy❤️</h1>
+
+    <p>
+        My lovelyyyyyyy babyyyyyyyyy...  
+        I hope you rested like the sweetest angel everrr😊  
+        I hope every little bit of tiredness.. stress.. and heaviness melted away while you slept..
+        You deserve the softest dreams.. the warmest comfort.. and the happiest heart alwaysss..  
+        I wish I could hold you close right now and kiss your forehead while telling you how proud I am of youuu💕
+    </p>
+
+    <a href="#moreMessage" class="button">
+        More Babyyyy 💌
+    </a>
+
+    <div id="moreMessage">
+
+        <p>
+            Babyyyy... no matter how hard the days get.. I always want you to remember something okay?  
+            You are deeply loved.  
+            You are precious.  
+            You are my comfort.. my peace.. my favorite person in this whole worldddd🥹❤️  
+            So today.. smile more.. stress less.. drink waterrrr.. and let your beautiful heart resttt.  
+            And whenever you feel low.. just remember your baby is always here holding you tightly foreverrr💞
+        </p>
+
+        <div class="love">
+            I loveeeeeeeeeeee youuuuuu babyyyyy❤️
+            <br><br>
+            umaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa💋
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
